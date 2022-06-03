@@ -1,13 +1,20 @@
 # Awesome NGP
 Collect various implementation of NGP
 
-## Content
-- [Awesome NGP](#awesome-ngp)
-  - [Content](#content)
-    - [Instant-ngp (Original project)](#instant-ngp-original-project)
-    - [JNeRF](#jnerf)
-    - [torch-ngp](#torch-ngp)
-    - [Different Project Compare](#different-project-compare)
+
+
+
+| Project            | PSNR  | Train Speed |
+| ------------------ | ----- | ----------- |
+| [Instant-ngp(paper)](#instant-ngp-original-project) | 36.39 (5 min) | -           |
+| [JNeRF](#jnerf)             | 36.41 (5 min) | 133 iters/s |
+| [torch-ngp](#torch-ngp)          | 35.52 | 50 iters/s  |
+| [HashNeRF-pytorch](#hashnerf-pytorch) | - | - |
+
+
+
+------
+
 
 
 
@@ -41,21 +48,20 @@ JNeRF is a NeRF benchmark based on Jittor. JNeRF supports Instant-NGP capable of
 
 A pytorch implementation of [instant-ngp](https://github.com/NVlabs/instant-ngp), as described in [*Instant Neural Graphics Primitives with a Multiresolution Hash Encoding*](https://nvlabs.github.io/instant-ngp/assets/mueller2022instant.pdf).
 
-
-
 [Project github](https://github.com/ashawkey/torch-ngp)
 
 
 
 ------
 
-### Different Project Compare
-
-| Project            | PSNR  |
-| ------------------ | ----- |
-| Instant-ngp(paper) | 36.39 |
-| JNeRF              | 36.41 |
-| torch-ngp          | 35.52 |
 
 
+### HashNeRF-pytorch
 
+HashNeRF-pytorch is a **pure PyTorch** implementation of [Instant-NGP](https://github.com/NVlabs/instant-ngp).
+
+[Project github](https://github.com/johnny-walker/HashNeRF)
+
+
+
+------
